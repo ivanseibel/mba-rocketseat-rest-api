@@ -1,15 +1,23 @@
 {
-  "name": "mba-rocketseat-rest-api",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "typescript": "^5.7.3"
-  }
+	"name": "mba-rocketseat-rest-api",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsx watch src/server.ts",
+		"lint": "biome lint --error-on-warnings ./src"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@rocketseat/eslint-config": "^2.2.2",
+		"@types/node": "^22.13.1",
+		"biome": "^0.3.3",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"fastify": "^5.2.1"
+	}
 }
