@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+
+# environment
+.env
+
+# logs
+npm-debug.log
+yarn-error.log
+logs/
+
+# coverage
+coverage/
+.nyc_output/
+
+# build folders
+dist/
+build/
