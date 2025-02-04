@@ -20,6 +20,9 @@ importers:
       sqlite3:
         specifier: ^5.1.7
         version: 5.1.7
+      zod:
+        specifier: ^3.24.1
+        version: 3.24.1
     devDependencies:
       '@rocketseat/eslint-config':
         specifier: ^2.2.2
@@ -2325,6 +2328,9 @@ packages:
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  zod@3.24.1:
+    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
 snapshots:
 
@@ -4995,3 +5001,5 @@ snapshots:
   yallist@4.0.0: {}
 
   yocto-queue@0.1.0: {}
+
+  zod@3.24.1: {}
