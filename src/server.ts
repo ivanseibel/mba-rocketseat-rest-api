@@ -1,30 +1,15 @@
-// import crypto from "node:crypto";
-import Fastify from "fastify";
-import { knex } from "./database";
+import fastify from "fastify";
 import { env } from "./env";
+import { transactionsRoutes } from "./routes/transactions";
 
-const app = Fastify();
+const app = fastify();
 
-app.get("/hello", async (request, reply) => {
-	// const transaction = await knex("transactions")
-	// 	.insert({
-	// 		id: crypto.randomUUID(),
-	// 		title: "Salary",
-	// 		amount: Math.floor(Math.random() * 10000),
-	// 	})
-	// 	.returning("*");
+app.register(transactionsRoutes);
 
-	// console.log(transaction);
-
-	const transactions = await knex("transactions")
-		.where("amount", ">", 5000)
-		.select("*");
-
-	console.log(transactions);
-
-	return transactions;
-});
-
-app.listen({ port: env.PORT }).then(() => {
-	console.log("Server is running on http://localhost:3333");
-});
+app
+	.listen({
+		port: env.PORT,
+	})
+	.then(() => {
+		console.log("HTTP Server Running!");
+	});
