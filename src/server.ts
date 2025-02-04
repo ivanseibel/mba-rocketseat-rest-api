@@ -1,6 +1,7 @@
-import crypto from "node:crypto";
+// import crypto from "node:crypto";
 import Fastify from "fastify";
 import { knex } from "./database";
+import { env } from "./env";
 
 const app = Fastify();
 
@@ -24,6 +25,6 @@ app.get("/hello", async (request, reply) => {
 	return transactions;
 });
 
-app.listen({ port: 3333 }).then(() => {
+app.listen({ port: env.PORT }).then(() => {
 	console.log("Server is running on http://localhost:3333");
 });
