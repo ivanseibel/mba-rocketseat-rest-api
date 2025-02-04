@@ -16,3 +16,6 @@ coverage/
 # build folders
 dist/
 build/
+
+# Avoid data files
+temp/app.db
