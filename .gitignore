@@ -19,5 +19,4 @@ dist/
 build/
 
 # Avoid data files
-db/app.db
-db/test.db
+db/*.db
