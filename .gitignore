@@ -3,6 +3,7 @@ node_modules/
 
 # environment
 .env
+.env.test
 
 # logs
 npm-debug.log
@@ -19,3 +20,4 @@ build/
 
 # Avoid data files
 db/app.db
+db/test.db
