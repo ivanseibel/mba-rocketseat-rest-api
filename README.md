@@ -1,7 +1,7 @@
 # Functional requirements
 
 - [x] The user must be able to create a new transaction;
-- [ ] The user must be able to get a summary of their account;
+- [x] The user must be able to get a summary of their account;
 - [x] The user must be able to list all transactions that have occurred;
 - [x] The user must be able to view a single transaction;
 
